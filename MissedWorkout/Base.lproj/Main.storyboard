@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="560-UC-vvW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AddWorkoutViewController" customModule="MissedWorkout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sL0-lV-DBS">
+                                <rect key="frame" x="16" y="28" width="38" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="747" translatesAutoresizingMaskIntoConstraints="NO" id="cJJ-Sn-Cua">
+                                <rect key="frame" x="0.0" y="49" width="375" height="119.5"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2P-cd-b6N">
+                                <rect key="frame" x="16" y="168.5" width="38" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Duration (Minutes)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XQ-LF-wRk">
+                                <rect key="frame" x="16" y="308.5" width="142" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="747" translatesAutoresizingMaskIntoConstraints="NO" id="BoQ-Pe-IY2">
+                                <rect key="frame" x="0.0" y="329" width="375" height="119"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Calories Burned" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6k-DB-KEV">
+                                <rect key="frame" x="16" y="448" width="122.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="747" translatesAutoresizingMaskIntoConstraints="NO" id="4cw-eO-Tef">
+                                <rect key="frame" x="0.0" y="468.5" width="375" height="119.5"/>
+                            </pickerView>
+                            <datePicker contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="747" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="XWi-yg-Zdi">
+                                <rect key="frame" x="0.0" y="189.5" width="375" height="119"/>
+                                <date key="date" timeIntervalSinceReferenceDate="504758858.48753297">
+                                    <!--2016-12-30 02:47:38 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pis-NA-LiU">
+                                <rect key="frame" x="142.5" y="588" width="89" height="30"/>
+                                <state key="normal" title="Add Workout"/>
+                                <connections>
+                                    <action selector="addWorkoutPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="TPX-9v-nYt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BoQ-Pe-IY2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6xe-lg-wO4"/>
+                            <constraint firstItem="XWi-yg-Zdi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7We-U8-Gk5"/>
+                            <constraint firstItem="2XQ-LF-wRk" firstAttribute="top" secondItem="XWi-yg-Zdi" secondAttribute="bottom" id="B6l-kM-c3l"/>
+                            <constraint firstItem="cJJ-Sn-Cua" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C0F-fH-5pA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pis-NA-LiU" secondAttribute="bottom" id="GgL-6b-fov"/>
+                            <constraint firstItem="XWi-yg-Zdi" firstAttribute="top" secondItem="o2P-cd-b6N" secondAttribute="bottom" id="JWX-k3-VM8"/>
+                            <constraint firstItem="BoQ-Pe-IY2" firstAttribute="top" secondItem="2XQ-LF-wRk" secondAttribute="bottom" id="JdW-6T-B3R"/>
+                            <constraint firstItem="XWi-yg-Zdi" firstAttribute="height" secondItem="cJJ-Sn-Cua" secondAttribute="height" id="KF3-pk-Qme"/>
+                            <constraint firstItem="cJJ-Sn-Cua" firstAttribute="top" secondItem="sL0-lV-DBS" secondAttribute="bottom" id="Mqy-z9-ZQk"/>
+                            <constraint firstAttribute="trailing" secondItem="4cw-eO-Tef" secondAttribute="trailing" id="Pi7-p7-gb8"/>
+                            <constraint firstItem="4cw-eO-Tef" firstAttribute="height" secondItem="cJJ-Sn-Cua" secondAttribute="height" id="WPr-XU-eb3"/>
+                            <constraint firstAttribute="trailing" secondItem="cJJ-Sn-Cua" secondAttribute="trailing" id="Wbk-sC-Egl"/>
+                            <constraint firstItem="sL0-lV-DBS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="YTP-yM-VFC"/>
+                            <constraint firstItem="g6k-DB-KEV" firstAttribute="top" secondItem="BoQ-Pe-IY2" secondAttribute="bottom" id="YkY-41-ZoK"/>
+                            <constraint firstAttribute="trailing" secondItem="BoQ-Pe-IY2" secondAttribute="trailing" id="agr-8V-aMF"/>
+                            <constraint firstItem="sL0-lV-DBS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cMq-13-Z1p"/>
+                            <constraint firstItem="BoQ-Pe-IY2" firstAttribute="height" secondItem="cJJ-Sn-Cua" secondAttribute="height" id="e2a-LQ-8YB"/>
+                            <constraint firstAttribute="trailing" secondItem="XWi-yg-Zdi" secondAttribute="trailing" id="iT0-Mf-T2y"/>
+                            <constraint firstItem="g6k-DB-KEV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="j2f-Hs-BBI"/>
+                            <constraint firstItem="2XQ-LF-wRk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kxQ-2E-Jt8"/>
+                            <constraint firstItem="o2P-cd-b6N" firstAttribute="top" secondItem="cJJ-Sn-Cua" secondAttribute="bottom" id="laU-9X-qAc"/>
+                            <constraint firstItem="o2P-cd-b6N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lkE-S4-ZCF"/>
+                            <constraint firstItem="pis-NA-LiU" firstAttribute="top" secondItem="4cw-eO-Tef" secondAttribute="bottom" id="qD2-A0-0qO"/>
+                            <constraint firstItem="4cw-eO-Tef" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="raG-cj-DSM"/>
+                            <constraint firstItem="4cw-eO-Tef" firstAttribute="top" secondItem="g6k-DB-KEV" secondAttribute="bottom" id="s8L-nE-YZc"/>
+                            <constraint firstItem="pis-NA-LiU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ygL-ft-PA6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add" id="c6s-uG-Nix"/>
+                    <connections>
+                        <outlet property="caloriesBurnedPicker" destination="4cw-eO-Tef" id="tkr-Al-jN9"/>
+                        <outlet property="durationPicker" destination="BoQ-Pe-IY2" id="4v2-ls-sMR"/>
+                        <outlet property="startDatePicker" destination="XWi-yg-Zdi" id="Fe0-Hd-ULx"/>
+                        <outlet property="workoutTypePicker" destination="cJJ-Sn-Cua" id="In4-Zy-DDW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="38" y="798"/>
+        </scene>
+        <!--Manage-->
+        <scene sceneID="tY3-GK-lTJ">
+            <objects>
+                <viewController id="jSc-EA-4yv" customClass="ManageWorkoutsViewController" customModule="MissedWorkout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hLQ-Su-8Ia"/>
+                        <viewControllerLayoutGuide type="bottom" id="ati-rm-KPr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mjw-vA-RRn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Rh-ar-CAc">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorkoutCell" textLabel="LPW-2k-Apc" detailTextLabel="VhA-IQ-oGs" style="IBUITableViewCellStyleSubtitle" id="kcQ-LQ-ecP">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kcQ-LQ-ecP" id="ROg-ke-o8v">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Workout Type - Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LPW-2k-Apc">
+                                                    <rect key="frame" x="15" y="4" width="185" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Workout Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VhA-IQ-oGs">
+                                                    <rect key="frame" x="15" y="25" width="78" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jSc-EA-4yv" id="4db-Dp-cgK"/>
+                                    <outlet property="delegate" destination="jSc-EA-4yv" id="9SS-at-jjN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5Rh-ar-CAc" secondAttribute="trailing" id="PRH-g8-ZDH"/>
+                            <constraint firstItem="5Rh-ar-CAc" firstAttribute="top" secondItem="hLQ-Su-8Ia" secondAttribute="bottom" id="bJ5-mR-Z1M"/>
+                            <constraint firstItem="5Rh-ar-CAc" firstAttribute="leading" secondItem="Mjw-vA-RRn" secondAttribute="leading" id="gJF-xv-Fr8"/>
+                            <constraint firstItem="ati-rm-KPr" firstAttribute="top" secondItem="5Rh-ar-CAc" secondAttribute="bottom" id="p0x-N9-gur"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Manage" id="Ttv-B7-vYa"/>
+                    <connections>
+                        <outlet property="tableView" destination="5Rh-ar-CAc" id="km2-YM-lwF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2uw-Ks-4YV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="797"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="y4Y-SF-51v">
+            <objects>
+                <tabBarController id="560-UC-vvW" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Dg7-O2-tQq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="GTU-v1-CGP"/>
+                        <segue destination="jSc-EA-4yv" kind="relationship" relationship="viewControllers" id="Xqa-er-1Au"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3O-50-d5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="38" y="32"/>
+        </scene>
+    </scenes>
+</document>

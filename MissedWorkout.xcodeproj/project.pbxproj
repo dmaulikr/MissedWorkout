@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D828F1AB1E14A74C00E97A7D /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = D828F1AA1E14A74C00E97A7D /* Entitlements.plist */; };
+		D85638A51E19709B0074E18F /* ManageWorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85638A41E19709B0074E18F /* ManageWorkoutsViewController.swift */; };
+		D85638A81E197FD60074E18F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85638A71E197FD60074E18F /* HealthKit.framework */; };
+		D87D4E121E14231800A3926A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87D4E111E14231800A3926A /* AppDelegate.swift */; };
+		D87D4E141E14231800A3926A /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87D4E131E14231800A3926A /* AddWorkoutViewController.swift */; };
+		D87D4E171E14231800A3926A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87D4E151E14231800A3926A /* Main.storyboard */; };
+		D87D4E191E14231800A3926A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87D4E181E14231800A3926A /* Assets.xcassets */; };
+		D87D4E1C1E14231800A3926A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87D4E1A1E14231800A3926A /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D828F1AA1E14A74C00E97A7D /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		D85638A41E19709B0074E18F /* ManageWorkoutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageWorkoutsViewController.swift; sourceTree = "<group>"; };
+		D85638A61E197FD60074E18F /* MissedWorkout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MissedWorkout.entitlements; sourceTree = "<group>"; };
+		D85638A71E197FD60074E18F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		D87D4E0E1E14231800A3926A /* MissedWorkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MissedWorkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87D4E111E14231800A3926A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D87D4E131E14231800A3926A /* AddWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewController.swift; sourceTree = "<group>"; };
+		D87D4E161E14231800A3926A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D87D4E181E14231800A3926A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D87D4E1B1E14231800A3926A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D87D4E1D1E14231800A3926A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D87D4E0B1E14231800A3926A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85638A81E197FD60074E18F /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D87D4E051E14231800A3926A = {
+			isa = PBXGroup;
+			children = (
+				D87D4E101E14231800A3926A /* MissedWorkout */,
+				D87D4E0F1E14231800A3926A /* Products */,
+				D87D4E231E14233C00A3926A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D87D4E0F1E14231800A3926A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D87D4E0E1E14231800A3926A /* MissedWorkout.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D87D4E101E14231800A3926A /* MissedWorkout */ = {
+			isa = PBXGroup;
+			children = (
+				D85638A61E197FD60074E18F /* MissedWorkout.entitlements */,
+				D87D4E111E14231800A3926A /* AppDelegate.swift */,
+				D87D4E131E14231800A3926A /* AddWorkoutViewController.swift */,
+				D85638A41E19709B0074E18F /* ManageWorkoutsViewController.swift */,
+				D87D4E151E14231800A3926A /* Main.storyboard */,
+				D87D4E181E14231800A3926A /* Assets.xcassets */,
+				D87D4E1A1E14231800A3926A /* LaunchScreen.storyboard */,
+				D87D4E1D1E14231800A3926A /* Info.plist */,
+				D828F1AA1E14A74C00E97A7D /* Entitlements.plist */,
+			);
+			path = MissedWorkout;
+			sourceTree = "<group>";
+		};
+		D87D4E231E14233C00A3926A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D85638A71E197FD60074E18F /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D87D4E0D1E14231800A3926A /* MissedWorkout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87D4E201E14231800A3926A /* Build configuration list for PBXNativeTarget "MissedWorkout" */;
+			buildPhases = (
+				D87D4E0A1E14231800A3926A /* Sources */,
+				D87D4E0B1E14231800A3926A /* Frameworks */,
+				D87D4E0C1E14231800A3926A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MissedWorkout;
+			productName = AddWorkout;
+			productReference = D87D4E0E1E14231800A3926A /* MissedWorkout.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D87D4E061E14231800A3926A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Joseph Ross";
+				TargetAttributes = {
+					D87D4E0D1E14231800A3926A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PTE4TYXPW2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D87D4E091E14231800A3926A /* Build configuration list for PBXProject "MissedWorkout" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D87D4E051E14231800A3926A;
+			productRefGroup = D87D4E0F1E14231800A3926A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D87D4E0D1E14231800A3926A /* MissedWorkout */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D87D4E0C1E14231800A3926A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D828F1AB1E14A74C00E97A7D /* Entitlements.plist in Resources */,
+				D87D4E1C1E14231800A3926A /* LaunchScreen.storyboard in Resources */,
+				D87D4E191E14231800A3926A /* Assets.xcassets in Resources */,
+				D87D4E171E14231800A3926A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D87D4E0A1E14231800A3926A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87D4E141E14231800A3926A /* AddWorkoutViewController.swift in Sources */,
+				D85638A51E19709B0074E18F /* ManageWorkoutsViewController.swift in Sources */,
+				D87D4E121E14231800A3926A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D87D4E151E14231800A3926A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D87D4E161E14231800A3926A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D87D4E1A1E14231800A3926A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D87D4E1B1E14231800A3926A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D87D4E1E1E14231800A3926A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D87D4E1F1E14231800A3926A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D87D4E211E14231800A3926A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MissedWorkout/MissedWorkout.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PTE4TYXPW2;
+				INFOPLIST_FILE = MissedWorkout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rossable.MissedWorkout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D87D4E221E14231800A3926A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MissedWorkout/MissedWorkout.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PTE4TYXPW2;
+				INFOPLIST_FILE = MissedWorkout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rossable.MissedWorkout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D87D4E091E14231800A3926A /* Build configuration list for PBXProject "MissedWorkout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87D4E1E1E14231800A3926A /* Debug */,
+				D87D4E1F1E14231800A3926A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D87D4E201E14231800A3926A /* Build configuration list for PBXNativeTarget "MissedWorkout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87D4E211E14231800A3926A /* Debug */,
+				D87D4E221E14231800A3926A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D87D4E061E14231800A3926A /* Project object */;
+}
